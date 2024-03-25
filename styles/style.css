@@ -129,6 +129,35 @@ nav ul li a {
     margin: 0 auto;
 }
 
+/* featured products styles */
+.featured-products {
+    max-width: 1024px;
+    margin: 50px auto;
+}
+
+.featured-products-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.featured-products-details h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.featured-products-details p {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #6c6c6c;
+    margin: 20px auto;
+}
+
+.featured-products-details .btn-primary {
+    border-radius: 2px;
+}
+
 /* popoular collection styles */
 /* .popular-collection {} */
 
@@ -196,6 +225,34 @@ nav ul li a {
     font-weight: 700;
     margin-left: 10px;
     margin-top: 4px;
+}
+
+footer {
+    background-color: #0A0826;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #D9DBE1;
+    line-height: 2rem;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #ffffff;
+    padding: 10px 15px;
 }
 
 /* responsive styles */
@@ -290,6 +347,24 @@ nav ul li a {
         padding-right: 15px;
     }
 
+    .featured-products-container {
+        flex-direction: column-reverse;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .featured-products-img img {
+        width: 100%;
+    }
+
+    .featured-products-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .featured-products-details .btn-primary {
+        margin: 0 auto;
+    }
+
 }
 
 /* tablet or medium devices */
@@ -297,7 +372,7 @@ nav ul li a {
 
     /* header and nav responsive styles */
     header {
-        padding: 0;
+        padding: 0 5px;
     }
 
     nav>h3 {
@@ -323,4 +398,38 @@ nav ul li a {
     .icon {
         display: flex;
     }
+
+    /* collections responsive styles */
+    .card-container {
+        width: 660px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .see-more-div {
+        flex-direction: column;
+        width: 100vw;
+        text-align: right;
+        padding-right: 15px;
+    }
+
+    .featured-products-container {
+        flex-direction: column-reverse;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .featured-products-img img {
+        width: 100%;
+    }
+
+    .featured-products-details h2 {
+        font-size: 1.5rem;
+    }
+
+    .featured-products-details .btn-primary {
+        margin: 0 auto;
+    }
+
 }
